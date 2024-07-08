@@ -1,0 +1,2 @@
+# pycli
+Python cli template
