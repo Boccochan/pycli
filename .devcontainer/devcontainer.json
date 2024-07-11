@@ -1,0 +1,32 @@
+{
+    "name": "pycli env",
+    "build": {
+        "dockerfile": "../Dockerfile"
+    },
+    "mounts": [
+        {
+            "type": "volume",
+            "target": "${containerWorkspaceFolder}/.venv"
+        }
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-python.autopep8",
+                "ms-python.mypy-type-checker"
+            ],
+            "settings": {
+                "python.formatting.provider": "autopep8",
+                "python.formatting.autopep8Args": [
+                    "--max-line-length",
+                    "150"
+                ],
+                "editor.formatOnSave": true,
+                "python.pythonPath": ".venv"
+            }
+        }
+    },
+    "postCreateCommand": "poetry install --no-interaction"
+}

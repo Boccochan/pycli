@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pycli"
+version = "0.1.0"
+description = "CLI template"
+authors = ["Yasuhiro Ito"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+click = "^8.1.7"
+
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.3.1"
+mypy = "^1.10.1"
+pytest = "^8.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
