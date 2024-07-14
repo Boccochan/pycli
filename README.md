@@ -9,4 +9,6 @@ Python cli template
 - [ ] clickでサンプルの実装
 - [ ] いろいろ試す
 - [ ] READMEを充実させる
+- [ ] 
+- [ ] [mypy-type-checker]: Couldn't find message for key settings.cwd.description.
 
