@@ -1,3 +1,9 @@
 .venv
 .mypy_cache
 dist
+.devcontainer
+.vscode
+.gitattributes
+.gitignore
+.git
+
