@@ -1,5 +1,4 @@
 FROM python:3.12.4-slim as development
-USER root
 
 WORKDIR /app
 
@@ -22,8 +21,6 @@ RUN poetry config virtualenvs.create false && \
     mv /tmp/.builder/packages/bin /tmp/.builder/bin
 
 FROM python:3.12.4-slim as production
-
-USER root
 
 WORKDIR /app
 
