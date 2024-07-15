@@ -27,9 +27,8 @@ pycli = "pycli:pycli.main"
 test = "pytest"
 
 [tool.ruff.lint]
-extend-select = [
-  "I", # isort
-]
+extend-select = ["ALL"]
+ignore = ["D", "ANN002", "ANN003", "ANN101"]
 
 [tool.ruff.lint.isort]
 combine-as-imports = true
