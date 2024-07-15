@@ -30,5 +30,8 @@ test = "pytest"
 extend-select = ["ALL"]
 ignore = ["D", "ANN002", "ANN003", "ANN101"]
 
+[tool.ruff.lint.extend-per-file-ignores]
+"tests/**/*.py" = ["S101", "ANN201", "ARG"]
+
 [tool.ruff.lint.isort]
 combine-as-imports = true
