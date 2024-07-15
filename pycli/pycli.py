@@ -9,7 +9,7 @@ def main(name: str) -> None:
     """Simple program that greets NAME."""
     click.echo(f"Hi, {name}!")
     argv = sys.argv
-    print(argv)
+    click.echo(argv)
 
 
 if __name__ == "__main__":
