@@ -10,3 +10,5 @@ Python cli template
 - [ ] 
 
 
+- Pythonのディレクトリ構造の注意点
+- セキュリティを調べる
