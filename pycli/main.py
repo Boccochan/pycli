@@ -1,16 +1,14 @@
-import sys
+import typer
 
-import click
+app = typer.Typer()
 
 
-@click.command()
-@click.option("-v", "--verbose", is_flag=True)
-@click.option("--name", default="world", help="Name to greet")
-def main(verbose: int, name: str) -> None:
-    """Simple program that greets NAME."""
-    click.echo(f"Hi, {name} {verbose}!")
-    argv = sys.argv
-    click.echo(argv)
+def cli(name: str, lastname: str) -> None:
+    typer.echo(f"Hello {name} {lastname}")
+
+
+def main() -> None:
+    typer.run(cli)
 
 
 if __name__ == "__main__":

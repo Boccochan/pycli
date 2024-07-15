@@ -2,5 +2,7 @@ version: '3.4'
 services:
   pycli:
     build:
-        context: .
-        target: production
+      context: .
+      target: production
+    volumes:
+      - ".:/app"
