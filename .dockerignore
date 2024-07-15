@@ -7,3 +7,4 @@ dist
 .gitignore
 .git
 __pycache__
+.ruff_cache
