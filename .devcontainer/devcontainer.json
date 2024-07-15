@@ -15,16 +15,15 @@
             "extensions": [
                 "ms-python.python",
                 "ms-python.vscode-pylance",
-                "ms-python.autopep8",
                 "ms-azuretools.vscode-docker",
-                "matangover.mypy"
+                "matangover.mypy",
+                "ms-python.black-formatter"
             ],
             "settings": {
-                "python.formatting.provider": "autopep8",
-                "python.formatting.autopep8Args": [
-                    "--max-line-length",
-                    "150"
-                ],
+                "[python]": {
+                    "editor.defaultFormatter": "ms-python.black-formatter",
+                    "editor.formatOnSave": true
+                },
                 "editor.formatOnSave": true,
                 "python.pythonPath": ".venv",
                 "mypy.runUsingActiveInterpreter": true
