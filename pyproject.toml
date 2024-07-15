@@ -21,7 +21,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-pycli = "pycli:pycli.main"
+pycli = "pycli:main.main"
 
 [tool.poe.tasks]
 test = "pytest"
