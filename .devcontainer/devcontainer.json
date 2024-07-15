@@ -17,13 +17,23 @@
                 "ms-python.vscode-pylance",
                 "ms-azuretools.vscode-docker",
                 "matangover.mypy",
-                "ms-python.black-formatter"
+                "ms-python.black-formatter",
+                "ms-python.flake8",
+                "njpwerner.autodocstring",
+                "usernamehw.errorlens"
             ],
             "settings": {
                 "[python]": {
                     "editor.defaultFormatter": "ms-python.black-formatter",
-                    "editor.formatOnSave": true
+                    "editor.formatOnSave": true,
+                    "editor.codeActionsOnSave": {
+                        "source.organizeImports": "explicit"
+                    }
                 },
+                "isort.args": [
+                    "--profile",
+                    "black"
+                ],
                 "editor.formatOnSave": true,
                 "python.pythonPath": ".venv",
                 "mypy.runUsingActiveInterpreter": true
