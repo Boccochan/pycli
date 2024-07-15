@@ -18,7 +18,8 @@
                 "matangover.mypy",
                 "njpwerner.autodocstring",
                 "usernamehw.errorlens",
-                "charliermarsh.ruff"
+                "charliermarsh.ruff",
+                "tamasfe.even-better-toml"
             ],
             "settings": {
                 "editor.codeActionsOnSave": {
