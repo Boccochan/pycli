@@ -10,7 +10,6 @@ readme = "README.md"
 python = "^3.12"
 click = "^8.1.7"
 
-
 [tool.poetry.group.dev.dependencies]
 mypy = "^1.10.1"
 pytest = "^8.2.2"
@@ -29,7 +28,7 @@ test = "pytest"
 
 [tool.ruff.lint]
 extend-select = [
-  "I",  # isort
+  "I", # isort
 ]
 
 [tool.ruff.lint.isort]
