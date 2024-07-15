@@ -25,15 +25,8 @@
             "settings": {
                 "[python]": {
                     "editor.defaultFormatter": "ms-python.black-formatter",
-                    "editor.formatOnSave": true,
-                    "editor.codeActionsOnSave": {
-                        "source.organizeImports": "explicit"
-                    }
+                    "editor.formatOnSave": true
                 },
-                "isort.args": [
-                    "--profile",
-                    "black"
-                ],
                 "editor.formatOnSave": true,
                 "python.pythonPath": ".venv",
                 "mypy.runUsingActiveInterpreter": true
