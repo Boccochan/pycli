@@ -1,10 +1,11 @@
 import typer
+from rich import print
 
 app = typer.Typer()
 
 
 def cli(name: str, lastname: str) -> None:
-    typer.echo(f"Hello {name} {lastname}")
+    print(f"name {name}, lastname {lastname}")
 
 
 def main() -> None:
